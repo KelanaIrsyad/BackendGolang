@@ -1,6 +1,6 @@
 [build]
   builder = "nixpacks"
-  buildCommand = "GOOS=windows GOARCH=amd64 go build -o main ./cmd/backend"
+  buildCommand = "GOOS=windows GOARCH=amd64 go build -o main ./cmd/hello"
 
 [deploy]
   # Replace with your Railway service name
