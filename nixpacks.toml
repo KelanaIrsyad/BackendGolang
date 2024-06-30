@@ -1,0 +1,9 @@
+[build]
+  builder = "nixpacks"
+  buildCommand = "GOOS=windows GOARCH=amd64 go build -o main ./cmd/backend"
+
+[deploy]
+  # Replace with your Railway service name
+  service = "kelana-irsyad"
+  # Replace with the appropriate start command for your app on Windows
+  startCommand = "main.go"
