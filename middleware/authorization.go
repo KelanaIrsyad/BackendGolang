@@ -37,7 +37,7 @@ func UserAuthorization() gin.HandlerFunc {
 		if User.ID != userID {
 			c.AbortWithStatusJSON(http.StatusUnauthorized, gin.H{
 				"error":   "Unauthorized",
-				"message": "you are not allowed to accsess this data",
+				"message": "You are not allowed to access this data",
 			})
 			return
 		}
@@ -73,7 +73,7 @@ func PhotoAuthorization() gin.HandlerFunc {
 		if Photo.UserID != userID {
 			c.AbortWithStatusJSON(http.StatusUnauthorized, gin.H{
 				"error":   "Unauthorized",
-				"message": "You're not the owner of the photo",
+				"message": "You are not allowed to access this data",
 			})
 			return
 		}
@@ -110,7 +110,7 @@ func CommentAuthorization() gin.HandlerFunc {
 		if Comment.UserID != userID {
 			c.AbortWithStatusJSON(http.StatusUnauthorized, gin.H{
 				"error":   "Unauthorized",
-				"message": "You're not the writer of the comment",
+				"message": "You are not allowed to access this data",
 			})
 			return
 		}
@@ -147,7 +147,7 @@ func SocialMediaAuthorization() gin.HandlerFunc {
 		if SocialMedia.UserID != userID {
 			c.AbortWithStatusJSON(http.StatusUnauthorized, gin.H{
 				"error":   "Unauthorized",
-				"message": "You're not the writer of the comment",
+				"message": "You are not allowed to access this data",
 			})
 			return
 		}
