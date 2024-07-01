@@ -34,7 +34,7 @@ func StartDB() {
 
 	db, err = gorm.Open(postgres.Open(dsn), &gorm.Config{})
 	if err != nil {
-		log.Fatal("Error connecting to database:", err)
+		log.Print("Error connecting to database:", err)
 	}
 	fmt.Println("Sukses koneksi ke database")
 	db.Debug().AutoMigrate(model.User{}, model.Photo{}, model.Comment{}, model.SocialMedia{})
