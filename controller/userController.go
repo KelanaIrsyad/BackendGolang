@@ -109,11 +109,14 @@ func UpdateUser(c *gin.Context) {
 		return
 	}
 
+	AgeUser := model.User{}
+	db.Find(&AgeUser)
+
 	c.JSON(http.StatusOK, gin.H{
 		"id":             User.ID,
 		"email":          User.Email,
 		"username":       User.Username,
-		"age":            User.Age,
+		"age":            AgeUser.Age,
 		"profil_img_url": User.ProfilImgUrl,
 		"update_at":      User.UpdatedAt,
 	})
