@@ -1,5 +1,5 @@
 # backendgolang-production.up.railway.app
-**Kartu Prakerja - Hactiv8 - Basic Golang untuk Back End Developer Bacth 5**
+**Kartu Prakerja - Hacktiv8 - Basic Golang untuk Back End Developer Bacth 5**
 
 **Unjuk Kemampuan**
 
